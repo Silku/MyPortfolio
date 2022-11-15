@@ -3,7 +3,7 @@ import {Container,Nav, Navbar} from 'react-bootstrap';
 
 
 
-const SideNavbar = () =>{
+const TopNavbar = () =>{
 
     return(
         <>
@@ -11,7 +11,7 @@ const SideNavbar = () =>{
             style={{justifyContent:'space-between'}}
         >
         <Container fluid>
-            <Navbar.Brand href="/">Tw's portfolio</Navbar.Brand>
+            <Navbar.Brand href="/">Tw's Portfolio</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll"
             >
@@ -20,7 +20,8 @@ const SideNavbar = () =>{
                 style={{ maxHeight: '100px' }}
                 navbarScroll
             >
-            <Nav.Link href="/Profile">Profile</Nav.Link>
+            <Nav.Link href="/Aboutme">About me</Nav.Link>
+            <Nav.Link href="/Skills">Skills</Nav.Link>
             <Nav.Link href="/Portfolio">Portfolio</Nav.Link>
             </Nav>
             </Navbar.Collapse>
@@ -30,6 +31,6 @@ const SideNavbar = () =>{
     )
 }
 
-export default SideNavbar;
+export default TopNavbar;
 
 
